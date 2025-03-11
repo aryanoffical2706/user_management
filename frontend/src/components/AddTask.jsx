@@ -7,7 +7,7 @@ const AddTask = ({ fetchTasks }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://user-management-3mld.onrender.com/tasks', {
+      const response = await fetch('https://user-management-2-6ggp.onrender.com/tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title, description }),
