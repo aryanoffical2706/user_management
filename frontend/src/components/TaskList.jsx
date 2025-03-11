@@ -3,7 +3,7 @@ import React from 'react';
 const TaskList = ({ tasks, fetchTasks }) => {
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/tasks/${id}`, { method: 'DELETE' });
+      const response = await fetch(`https://user-management-3mld.onrender.com/tasks/${id}`, { method: 'DELETE' });
 
       if (response.ok) {
         fetchTasks(); 

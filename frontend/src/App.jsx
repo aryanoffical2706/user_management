@@ -6,7 +6,7 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
 
   const fetchTasks = async () => {
-    const response = await fetch('http://localhost:3000/tasks');
+    const response = await fetch('https://user-management-3mld.onrender.com/tasks');
     const data = await response.json();
     setTasks(data);
   };
